@@ -48,3 +48,34 @@ function userLoggedInMessage(username = "sam")
 // console.log(userLoggedInMessage());
 
 console.log(userLoggedInMessage("Hitesh"));
+console.log("---------------------------------------------");
+
+function itemsAddedToCart(...num1)
+{
+    return num1;
+}
+console.log(itemsAddedToCart(1000,2000,3000,29302));
+
+const user = {
+    username : "soumya",
+    price : 199
+}
+function handelObject(anyObj)
+{
+    console.log(`Username is ${anyObj.username} and the price is ${anyObj.price}`);
+}
+
+handelObject(user);
+handelObject({
+    username :"sam",
+    price :200
+})
+
+const myNewArray = [200,400,500]
+
+function returnSecondValue(getArray)
+{
+    return getArray[1];
+}
+console.log(returnSecondValue(myNewArray));
+
